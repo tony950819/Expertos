@@ -24,7 +24,7 @@
             </p>
             <p> 
                 <input class="submit" type="submit" name="btnLogin" id="btnLogin" value="Log in"/>
-                <a href="#">Registrarme</a>
+                <a href="../View/SignIn.php">Registrarme</a>
             </p>
         </form>
         
