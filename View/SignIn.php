@@ -18,7 +18,7 @@
     
         <form method="post" action="#" id="search_form">
             <div class="form_settings">
-                <p>Nombre: <input class="contact" type="text" name="txtName" id="txtName" value="" /></p>
+                <p><Nombre: <input class="contact" type="text" name="txtName" id="txtName" value="" /></p>
                 <p>Email:  <input class="contact" type="text" name="txtEmail" id="txtEmail" value="" /></p>
                 <p>Tipo de Turísta: 
                     <select class="contact" type="text" name="selType" id="selType" value="" >
