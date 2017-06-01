@@ -6,9 +6,7 @@
         <meta name="description" content="website description" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         <meta name="keywords" content="website keywords, website keywords" />
         <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
         <link rel="stylesheet" type="text/css" href="../style/style.css" title="style" />
@@ -35,7 +33,7 @@
     
     <!-- Texto a la izquierda -->
     <div class="col-md-4">
-        <div class="thumbnail text-center">
+        <div class="text-center">
             <h1>Su sitio de recomendaiones</h1>
             <p>Nos caracterizamos por ser una empresa dedicada a la comercialización de sitios
                 turísticos, contamos con 20 años de brindarle un servicio de calidad.</p>
@@ -85,17 +83,7 @@
 
     </div>
     
-
-
-
-
-   
-</div>
-
  <?php include_once '../Base/footer.php'; ?>
 
-<script src="../css/js/jquery.js"></script>
-<script src="../css/js/jquery.query-2.1.7.js"></script>
-<script src="../css/js/bootstrap.min.js"></script>
 </body>
 </html>
