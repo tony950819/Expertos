@@ -1,4 +1,4 @@
-<body>
+
   <div id="main">
     <div id="header">
       <div id="logo">
@@ -18,3 +18,4 @@
         </ul>
       </div>
     </div>
+  </div>

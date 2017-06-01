@@ -1,70 +1,101 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-  <title>TurisTico.com</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="../style/style.css" title="style" />
-</head>
+    <head>
+        <title>TurisTico.com</title>
+        <meta name="description" content="website description" />
 
-<?php include_once '../Base/header.php';?>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="keywords" content="website keywords, website keywords" />
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+        <link rel="stylesheet" type="text/css" href="../style/style.css" title="style" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" >
+        
+        <style>
+            .contenedor-per{
+                margin-bottom: 100px;
+            }
+            
+            .img-per{
+                width: 100%;
+            }
+            
+            .carr-top{
+                margin-top: 2.5%;
+            }
+        </style>
+    </head>
 
-    <div id="site_content">
-      <div class="sidebar">
+    <body>
+    <?php include_once '../Base/header.php'; ?>
+
+    
+    <!-- Texto a la izquierda -->
+    <div class="col-md-4">
+        <div class="thumbnail text-center">
+            <h1>Su sitio de recomendaiones</h1>
+            <p>Nos caracterizamos por ser una empresa dedicada a la comercialización de sitios
+                turísticos, contamos con 20 años de brindarle un servicio de calidad.</p>
+        </div>
+    </div>
+    
+    <div class="col-md-4 carr-top">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../images/machu.jpg" class="img-responsive img-per" alt="Chicago">
+                </div>
+
+                <div class="item">
+                    <img src="../images/bonito.jpg" class="img-responsive img-per" alt="Chicago">
+                </div>
+
+                <div class="item">
+                    <img src="../images/bonita2.jpg" class="img-responsive img-per" alt="Chicago">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col-md-4 contenedor-per">
         <!-- insert your sidebar items here -->
         <form method="post" action="#" id="search_form">
             <h3>Log in</h3>
             <p>Usuario: 
-                <input type="text" name="txtUser" id="txtUser"/>
+                <input type="text" class="form-control" name="txtUser" id="txtUser"/>
             </p>
             <p>Contraseña: 
-                <input type="password" name="txtPassword" id="txtPassword"/>
+                <input type="password"  class="form-control" name="txtPassword" id="txtPassword"/>
             </p>
             <p> 
-                <input class="submit" type="submit" name="btnLogin" id="btnLogin" value="Log in"/>
-                <a href="../View/SignIn.php">Registrarme</a>
+                <input class="btn btn-default" type="submit" name="btnLogin" value="Log in"/>
+                <a class="btn btn-success" href="../View/SignIn.php">Registrarme</a>
             </p>
         </form>
-        
-        <h4>New Website Launched</h4>
-        <h5>January 1st, 2010</h5>
-        <p>2010 sees the redesign of our website. Take a look around and let us know what you think.<br /></p>
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-        </ul>
-        <h3>Search</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-          </p>
-        </form>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1>Bienvenido al sitio web TurisTico.com</h1>
-        <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>), which means that you are free to download and use it for anything you want (including modifying and amending it). All I ask is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than that...</p>
-        <p>This template is written entirely in <strong>HTML5</strong> and <strong>CSS</strong>, and can be validated using the links in the footer.</p>
-        <p>You can view more free HTML5 web templates <a href="http://www.html5webtemplates.co.uk">here</a>.</p>
-        <p>This template is a fully functional 5 page website, with an <a href="examples.html">examples</a> page that gives examples of all the styles available with this design.</p>
-        <h2>Browser Compatibility</h2>
-        <p>This template has been tested in the following browsers:</p>
-        <ul>
-          <li>Internet Explorer 8</li>
-          <li>Internet Explorer 7</li>
-          <li>FireFox 3.5</li>
-          <li>Google Chrome 6</li>
-          <li>Safari 4</li>
-        </ul>
-      </div>
+
     </div>
-    <?php include_once '../Base/footer.php'; ?>
-  </div>
+    
+
+
+
+
+   
+</div>
+
+ <?php include_once '../Base/footer.php'; ?>
+
+<script src="../css/js/jquery.js"></script>
+<script src="../css/js/jquery.query-2.1.7.js"></script>
+<script src="../css/js/bootstrap.min.js"></script>
 </body>
 </html>
