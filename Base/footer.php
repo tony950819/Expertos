@@ -14,5 +14,6 @@
 
 
 <div class="footer-per text-center col-xs-12">
-    Copyright &copy; <a style="color: white;" href="https://www.ucr.ac.cr/">Universidad de Costa Rica</a>
+    Copyright &copy; <a style="color: white;" href="https://www.ucr.ac.cr/">Universidad de Costa Rica </a> |
+    <a style="color: white;" href="../View/Administrator/logInAdmin.php">Administrador</a>
 </div>
