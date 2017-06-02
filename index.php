@@ -9,8 +9,8 @@
         
         <meta name="keywords" content="website keywords, website keywords" />
         <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-        <link rel="stylesheet" type="text/css" href="../style/style.css" title="style" />
-        <link rel="stylesheet" href="../css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
         
         <style>
             .contenedor-per{
@@ -28,7 +28,26 @@
     </head>
 
     <body>
-    <?php include_once '../Base/header.php'; ?>
+    <div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.php">Turis<span class="logo_colour">Tico.com</span></a></h1>
+                <h2>Recomendaciones de Sitios Turísticos</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li class="selected"><a href="index.php">Home</a></li>
+                <li><a href="View/Recomendaciones.php">Recomendaciones</a></li>
+                <li><a href="View/Perfil.php">Perfil</a></li>
+                <li><a href="View/Contact.php">Contáctenos</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
     
     <!-- Texto a la izquierda -->
@@ -50,15 +69,15 @@
 
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="../images/machu.jpg" class="img-responsive img-per" alt="Chicago">
+                    <img src="images/machu.jpg" class="img-responsive img-per" alt="Chicago">
                 </div>
 
                 <div class="item">
-                    <img src="../images/bonito.jpg" class="img-responsive img-per" alt="Chicago">
+                    <img src="images/bonito.jpg" class="img-responsive img-per" alt="Chicago">
                 </div>
 
                 <div class="item">
-                    <img src="../images/bonita2.jpg" class="img-responsive img-per" alt="Chicago">
+                    <img src="images/bonita2.jpg" class="img-responsive img-per" alt="Chicago">
                 </div>
             </div>
         </div>
@@ -77,13 +96,13 @@
             </p>
             <p> 
                 <input class="btn btn-default" type="submit" name="btnLogin" value="Log in"/>
-                <a class="btn btn-success" href="../View/SignIn.php">Registrarme</a>
+                <a class="btn btn-success" href="View/SignIn.php">Registrarme</a>
             </p>
         </form>
 
     </div>
     
- <?php include_once '../Base/footer.php'; ?>
+ <?php include_once 'Base/footer.php'; ?>
 
 </body>
 </html>
